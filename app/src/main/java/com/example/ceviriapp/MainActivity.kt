@@ -334,7 +334,7 @@ fun TranslationScreen(
                     }
                 }
             }, 
-            // Yan modda buton yüksekliğini düşür (64dp -> 48dp)
+            // Yan modda buton yüksekliğini düşür
             modifier = Modifier.fillMaxWidth().height(if (isLandscape) 48.dp else 64.dp), 
             shape = RoundedCornerShape(20.dp), 
             colors = ButtonDefaults.buttonColors(
@@ -388,7 +388,7 @@ fun TranslationScreen(
     }
 }
 
-// Dil seçici de güncellendi
+// Dil seçici 
 @Composable
 private fun LanguageDropdownCompact(languages: List<Language>, selected: Language, onSelected: (Language) -> Unit) {
     var expanded by remember { mutableStateOf(false) }
